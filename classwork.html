@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flex and Grid</title>
+  <style>
+    .container{
+      display: flex;
+      border: 1px solid black;
+      /* height: 200px; */
+      width: 90%;
+      margin: auto;
+      padding: 3% 0px;
+      flex-direction: row;
+      /* flex direction allow us to set the box directions inside the container */
+      
+    }
+
+    .box{
+      width: 22%;
+      background-color: black;
+      color: white;
+      margin-top: 5px;
+      border: 1px solid red;
+      padding:2% 0px ;
+      text-align: center;
+      /* flex-grow: 1; */
+      /* flex grow take up the empty space and divide it and distribute among all the box equaly */
+
+    }
+
+    h1{
+      text-align: center;
+      /* margin-bottom: 10px; */
+    }
+
+    /* #last-box{ */
+      /* here as we are using id selector, the last box will get this property instead of 1 because id has more priority than class. Other boxes will have flex grow 1 but last one will have 4 */
+      /* flex-grow: 4;
+    } */
+
+    .space-between{
+      justify-content: space-between;
+    }
+
+    .space-between{
+      justify-content: space-evenly;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div class="container space-between">
+    <div class="box"><h1>Box 1</h1></div>
+    <div class="box"><h1>Box 2</h1></div>
+    <div class="box"><h1>Box 3</h1></div>
+    <div class="box" id="last-box"><h1>Box 4</h1></div>
+  </div>
+  
+</body>
+</html>
