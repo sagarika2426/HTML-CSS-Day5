@@ -2,341 +2,350 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Session Flex + Position</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Session Flex + Position</title>
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap"
+    rel="stylesheet"> -->
 </head>
 <style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        
-    }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
 
-    .card {
-        width: 300px;
-        border: 1px solid rgb(224, 224, 224);
-        margin-bottom: 20px;
-        padding: 10px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 5px;
+  }
 
-    }
+  .card {
+    width: 300px;
+    border: 1px solid rgb(224, 224, 224);
 
-    .card:hover{ 
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-      
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
 
+  }
 
-    }
-
-    .card-img {
-        width: 100%;
-    }
-
-    .footer {
-        border-top: 1px solid black;
-    }
-
-    h3,
-    p {
-        margin: 5px 0px;
-    }
-
-    .box-img {
-        width: 100%;
-    }
-
-    .container{
-      display: flex;
-      flex-wrap: wrap;
-      width: 90%;
-      margin: auto;
-      justify-content: space-between;
-      
-     
-    }
-
-    .box-img{
-      position: relative;
-    }
-
-    .box-img>p{
-      position: absolute;
-      background-color:whitesmoke ;
-      color: black;
-      bottom: 10px;
-      border-radius: 10px;
-      width: 30%;
-      text-align: center;
-      margin-left: 5px;
-      border: 1px solid rgb(90, 87, 87);
-      
-
-    }
-
-    img{
-      height: 400px;
-    }
-
-    .box-img>.Offer{
-      position: absolute;
-      background-color: rgb(215, 212, 207);
-      color: rgba(151, 19, 19, 0.833);
-      bottom: 10px;
-      border-radius: 10px;
-      width: 20%;
-      right: 20px;
-      border: 0.5px solid rgb(90, 87, 87);
-    
-
-    }
-
-    .price{
-      display: flex;
-      
-    }
-
-    .price-tags{
-      /* border: 1px solid black; */
-      margin-right: 20px;
-      margin-top: 18px;
-     
-    }
+  .card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
 
 
-    #sell_price{
-      font-size: 20px;
-      
-    }
+  }
 
-    #original_price{
-      color: grey;
-      font-size: 18px;
-      text-decoration: line-through;
+  .card-img {
+    width: 100%;
+  }
 
-    }
+  .footer {
+    border-top: 1px solid black;
+  }
 
-    #discount{
-      color: green;
-      font-size: 18px;
-    }
-    
+  h3,
+  p {
+    margin: 5px 0px;
+  }
+
+  .box-img {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    gap: 25px;
+
+
+  }
+
+  .box-img {
+    position: relative;
+  }
+
+  .box-img>p {
+    position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    bottom: 10px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-left: 5px;
+    border: 1px solid rgb(90, 87, 87);
+
+
+  }
+
+  img {
+    height: 400px;
+  }
+
+  .box-img>.Offer {
+    position: absolute;
+    background-color: rgb(215, 212, 207);
+    color: rgba(151, 19, 19, 0.833);
+    bottom: 10px;
+    border-radius: 10px;
+    width: 20%;
+    right: 20px;
+    border: 0.5px solid rgb(90, 87, 87);
+
+
+  }
+
+  .price {
+    display: flex;
+
+  }
+
+  .price-tags {
+    /* border: 1px solid black; */
+    margin-right: 20px;
+    margin-top: 18px;
+
+  }
+
+
+
+  #sell_price {
+    font-size: 20px;
+
+  }
+
+  #original_price {
+    color: grey;
+    font-size: 18px;
+    text-decoration: line-through;
+
+  }
+
+  #discount {
+    color: green;
+    font-size: 18px;
+  }
 </style>
 <style>
 
 </style>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="box-img">
-                <img src="https://i.pinimg.com/736x/4c/1c/30/4c1c30c45fb2512b42cfe6bc10be07f6.jpg"
-                    alt="" class="card-img">
-                <p>Flash Deal</p>
-                <p class="Offer">Offer</p>
-            </div>
-            <h3 class="card-heading">Yellow Yoke Dress</h3>
-            
-            
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
-
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 2300</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 4600</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>50% Off</h4>
-              </div>
-
-            </div>
-        </div>
-
-        <div class="card">
-          <div class="box-img">
-              <img src="https://cdn.shopify.com/s/files/1/0121/8376/5088/files/three_1024x1024.jpg?v=1577339708"
-                  alt="" class="card-img">
-                  <p>Bestseller</p>
-                  <p class="Offer">Offer</p>
-              </div>
-              <h3 class="card-heading">Anarkali Dress</h3>
-              
-             
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
-
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 3200</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 4000</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>20% Off</h4>
-              </div>
-
-            </div>
-        </div>
-
-        <div class="card">
-        <div class="box-img">
-            <img src="https://www.beatitude.in/cdn/shop/articles/DSC_2173_720x_dec1d27e-c2a7-4ce7-8b21-654c0ca12e43_1024x.webp?v=1675162397"
-                alt="" class="card-img">
-                <p>Bestseller</p>
-                <p class="Offer">Offer</p>
-            </div>
-            <h3 class="card-heading">Brown Tradional Dress</h3>
-            
-            
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
-
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 2400</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 3500</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>40% Off</h4>
-              </div>
-
-            </div>
-        </div>
-       
-        <div class="card">
+  <div class="container">
+    <div class="card">
       <div class="box-img">
-          <img src="https://www.kreeva.com/blog/wp-content/uploads/2022/07/Floor-Length-Anarkali-Suits-min.jpg"
-              alt="" class="card-img">
-              <p>Bestseller</p>
-              <p class="Offer">Offer</p>
-          </div>
-          <h3 class="card-heading">Long Gown Dress</h3>
-    
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
+        <img src="https://i.pinimg.com/736x/4c/1c/30/4c1c30c45fb2512b42cfe6bc10be07f6.jpg" alt="" class="card-img">
+        <p>Flash Deal</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Yellow Yoke Dress</h3>
 
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 4000</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 8000</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>50% Off</h4>
-              </div>
 
-            </div>
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 2300</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 4600</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>50% Off</h4>
         </div>
 
-        <div class="card">
-          <div class="box-img">
-              <img src="https://i.etsystatic.com/42347633/r/il/b3da44/5143521464/il_fullxfull.5143521464_2022.jpg"
-                  alt="" class="card-img">
-                  <p>Bestseller</p>
-                  <p class="Offer">Offer</p>
-              </div>
-              <h3 class="card-heading">Yellow Heart Dress</h3>
-              
-              
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
+      </div>
+    </div>
 
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 2000</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 3500</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>40% Off</h4>
-              </div>
+    <div class="card">
+      <div class="box-img">
+        <img src="https://cdn.shopify.com/s/files/1/0121/8376/5088/files/three_1024x1024.jpg?v=1577339708" alt=""
+          class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Anarkali Dress</h3>
 
-            </div>
+
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 3200</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 4000</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>20% Off</h4>
         </div>
 
-        <div class="card">
-          <div class="box-img">
-              <img src="https://www.libas.in/cdn/shop/files/pink-solid-georgette-lehenga-set-libas-1_400x.jpg?v=1693590589"
-                  alt="" class="card-img">
-                  <p>Bestseller</p>
-                  <p class="Offer">Offer</p>
-              </div>
-              <h3 class="card-heading">Pink Indo-western Dress</h3>
-              
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
+      </div>
+    </div>
 
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 2000</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 3500</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>40% Off</h4>
-              </div>
+    <div class="card">
+      <div class="box-img">
+        <img
+          src="https://www.beatitude.in/cdn/shop/articles/DSC_2173_720x_dec1d27e-c2a7-4ce7-8b21-654c0ca12e43_1024x.webp?v=1675162397"
+          alt="" class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Brown Tradional Dress</h3>
 
-            </div>
+
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 2400</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 3500</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>40% Off</h4>
         </div>
 
-        <div class="card">
-          <div class="box-img">
-              <img src="https://assets2.andaazfashion.com/media/catalog/product/cache/2/image/500x750/9df78eab33525d08d6e5fb8d27136e95/e/m/embroidered-georgette-mint-green-jacket-style-suit-lstv119873-1.jpg"
-                  alt="" class="card-img">
-                  <p>Bestseller</p>
-                  <p class="Offer">Offer</p>
-              </div>
-              <h3 class="card-heading">Indo-western Dress</h3>
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
+      </div>
+    </div>
 
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 2000</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 3500</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>40% Off</h4>
-              </div>
+    <div class="card">
+      <div class="box-img">
+        <img src="https://www.kreeva.com/blog/wp-content/uploads/2022/07/Floor-Length-Anarkali-Suits-min.jpg" alt=""
+          class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Long Gown Dress</h3>
 
-            </div>
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 4000</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 8000</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>50% Off</h4>
         </div>
 
-        <div class="card">
-          <div class="box-img">
-              <img src="https://img1.exportersindia.com/product_images/bc-full/2020/3/6950021/ladies-indo-western-dress-1584618568-5344791.jpeg"
-                  alt="" class="card-img">
-                  <p>Bestseller</p>
-                  <p class="Offer">Offer</p>
-              </div>
+      </div>
+    </div>
 
-              <h3 class="card-heading">Yellow Shrug Dress</h3>
-              <p class="card-text">Georgette Anarkali Suit For Womens</p>
+    <div class="card">
+      <div class="box-img">
+        <img src="https://i.etsystatic.com/42347633/r/il/b3da44/5143521464/il_fullxfull.5143521464_2022.jpg" alt=""
+          class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Yellow Heart Dress</h3>
 
-            <div class="price">
-              <div class="price-tags" id="sell_price"> 
-                <h4>Rs 2000</h4>
-              </div>
-              <div class="price-tags" id="original_price">
-                <h4>Rs 3500</h4>
-              </div>
-              <div class="price-tags" id="discount">
-                <h4>40% Off</h4>
-              </div>
 
-            </div>
-              
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 2000</h4>
         </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 3500</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>40% Off</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box-img">
+        <img src="https://www.libas.in/cdn/shop/files/pink-solid-georgette-lehenga-set-libas-1_400x.jpg?v=1693590589"
+          alt="" class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Pink Indo-western Dress</h3>
+
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 2000</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 3500</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>40% Off</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box-img">
+        <img
+          src="https://assets2.andaazfashion.com/media/catalog/product/cache/2/image/500x750/9df78eab33525d08d6e5fb8d27136e95/e/m/embroidered-georgette-mint-green-jacket-style-suit-lstv119873-1.jpg"
+          alt="" class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+      <h3 class="card-heading">Indo-western Dress</h3>
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 2000</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 3500</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>40% Off</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box-img">
+        <img
+          src="https://img1.exportersindia.com/product_images/bc-full/2020/3/6950021/ladies-indo-western-dress-1584618568-5344791.jpeg"
+          alt="" class="card-img">
+        <p>Bestseller</p>
+        <p class="Offer">Offer</p>
+      </div>
+
+      <h3 class="card-heading">Yellow Shrug Dress</h3>
+      <p class="card-text">Georgette Anarkali Suit For Womens</p>
+
+      <div class="price">
+        <div class="price-tags" id="sell_price">
+          <h4>Rs 2000</h4>
+        </div>
+        <div class="price-tags" id="original_price">
+          <h4>Rs 3500</h4>
+        </div>
+        <div class="price-tags" id="discount">
+          <h4>40% Off</h4>
+        </div>
+
+      </div>
 
     </div>
+
+  </div>
 </body>
 
 </html>
