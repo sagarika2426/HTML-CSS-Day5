@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor page</title>
+<style>
+  .main-box{
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: auto;
+    
+  }
+
+
+  .first-box{
+    height: 270px;
+    background-color: #ffffff;
+   
+
+  }
+
+  .second-box{
+    height: 450px;
+    background-color: rgb(243, 224, 209);
+    padding: 10px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .news-box{
+    height: 150px;
+    width: 30%;
+    /* border: 1px solid rgb(33, 31, 31); */
+    margin: auto;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+    
+  }
+
+  .news-mainbox{
+    display: flex;
+    height: 190px;
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: auto;
+  
+  }
+
+  .news-box>div{
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid blue; */
+  }
+
+  .news-box>div>img{
+    width: 100%;
+    height: 100%;
+  }
+  .news-box>.news-content{
+    background-color: rgb(244, 240, 237);
+    height: 40%;
+    text-align: center;  
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  #news-content>p{
+    padding-top: 10px;
+  }
+
+
+  #mentor-mainbox{
+    height: 350px;
+    width: 95%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    
+  } 
+
+  #mentor-mainbox>div{
+    height: 350px;
+    width: 20%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    position: relative;
+    
+  }
+
+  #mentor-mainbox>div>img{
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #adv-info{
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    width: 80%;
+    padding-left: 10PX;
+  }
+
+  #adv-info>h2{
+    /* background-color: rgb(94, 94, 94); */
+    width: 150px;
+    font-size: 21px;
+  }
+  #adv-info>p{
+    background-color: rgb(39, 40, 40);
+    /* width: 250px; */
+  }
+</style>
+
+</head>
+<body>
+  <!-- first box -->
+<div class="main-box first-box">
+  <div><h1>We are on News!</h1></div>
+  <div class="news-mainbox">
+    <div class="news-box">
+      <div>
+        <img src="https://leapscholar.com/assets/icons/LSRevamp/Yourstory%205.svg" >
+      </div>
+      <div class="news-content">
+        <p> Comprehensive, up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+      </div>
+    </div>
+
+    <div class="news-box">
+      <div>
+        <img src="https://leapscholar.com/assets/icons/LSRevamp/livemint-logo-vector%209.svg" >
+      </div>
+      <div class="news-content">
+        <p> Comprehensive, up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+      </div>
+    </div>
+
+    <div class="news-box">
+      <div>
+        <img src="https://leapscholar.com/assets/icons/LSRevamp/techcrunch-logo.svg" >
+      </div>
+      <div class="news-content">
+        <p> Comprehensive, up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2nd box -->
+<div class="main-box second-box">
+  <div>
+    <h1>Meet Our Advisors</h1>
+  </div>
+  <div id="mentor-mainbox">
+
+    <!-- 1st box -->
+    <div>
+      <img src="https://www.utimf.com/documents/media/image/AmitPremchandani.jpg">
+      <div id="adv-info">
+        <h2>Amit Premchandani</h2>
+        <p>Senior VP & Fund Manager - Equity</p>
+      </div>
+    </div>
+
+    <!-- 2nd box -->
+    <div>
+      <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fabout-us-page%2Fadvisor-3.png&w=640&q=75">
+      <div id="adv-info">
+        <h2>Bhupinder Singh</h2>
+        <p>Founder & CEO, InCred</p>
+      </div>
+    </div>
+
+    <!-- 3rd box -->
+    <div>
+      <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fabout-us-page%2Fadvisor-2.png&w=640&q=75">
+      <div id="adv-info">
+        <h2>Balaji Srinivasan</h2>
+        <p>CIO, University of Chicago</p>
+      </div>
+    </div>
+
+    <!-- 4th box -->
+    <div>
+      <img src="https://m.economictimes.com/thumb/msid-78717355,width-1500,height-2100,resizemode-4,/etmarkets-investors-guide-a-strategy-to-invest-rs-10-lakh-in-this-market.jpg">
+      <div id="adv-info">
+        <h2>Viraj Mehta</h2>
+        <p>Managing Director and Fund Manager, Equirus PMS</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
