@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Study Lab</title>
   <style>
 
     *{
       font-family: "Poppins", Arial, sans-serif;
     }
+
+    body{
+    margin: 0px;
+    }
     .main-box{
       height: 800px;
       width: 100%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
     }
 
     .top-banner{
-      height: 100px;
+      height: 70px;
       width: 100%;
-      border: 1px solid red;
+      /* border: 1px solid red; */
+      display: flex;
+      position: sticky;
+      top: 0px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
     .page-box{
       height: 700px;
       width:100%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       margin-top: 50px;
       display: flex;
       /* grid-template-columns: auto auto auto;
@@ -34,8 +41,8 @@
 
     .page-box>div{
       height: 650px;
-      width:45%;
-      border: 1px solid blue;
+      width:42%;
+      /* border: 1px solid blue; */
       margin: auto;
     }
 
@@ -47,19 +54,22 @@
 
     .main-box2>div{
       height: 300px;
-      width: 95%px;
-      border: 1px solid black;
+      width: 100%;
+      /* border: 1px solid black; */
       display: flex;
       
-      /* margin: auto;
-      flex-wrap: wrap; */
+      margin: auto;
+      /* flex-wrap: wrap; */
     }
 
     .main-box2>div>div{
-      height: 250px;
-      width: 45%;
-      border: 1px solid black;
+      height: 270px;
+      width: 40%;
+      /* border: 1px solid black; */
       margin: auto;
+      padding: 15px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 10px;
     }
 
     .main-box1>p{
@@ -73,12 +83,82 @@
       font-size: 13px;
     }
 
+    .main-box2>div>div>p{
+      color: gray;
+      line-height: 1.8;
+    }
+
+    .watch-video{
+      height: 150px;
+      width: 100%;
+      /* border: 1px solid red; */
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .main-box1>p{
+      font-size: 19px;
+    }
+
+    .content{
+      font-size: 18px;
+    }
+
+    .main-box1{
+      padding-left: 30px;
+    }
+
+    .logo{
+      height: 70px;
+      width: 200px;
+      border: 1px solid  #6071e6;
+      margin-left: 70px;
+      text-align: center;
+      background-color: #6071e6;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+    .logo>h1{
+      margin: 18px 0px;
+    }
+
+   .banner-items{
+    height: 70px;
+      width: 600px;
+      display: flex;
+      /* margin: auto; */
+      /* border: 1px solid red; */
+      margin-left: 500px;
+   }
+   .banner-items>div{
+    margin: auto;
+    font-weight: 200;
+   }
+
+   .Home{
+    color: blue;
+   }
+
+    
 
   </style>
 </head>
 <body>
   <div class="main-box">
     <div class="top-banner">
+      <div class="logo">
+        <h1>StudyLab</h1>
+      </div>
+
+      <div class="banner-items">
+        <div class="Home"><p><b>Home</b></p></div>
+        <div class="About"><p><b>About</b></p></div>
+        <div class="Course"> <p><b>Course</b></p></div>
+        <div class="Instructor"><p><b>Instructor</b></p></div>
+        <div class="Blog"> <p><b>Blog</b></p></div>
+        <div class="contact"> <p><b>Contact</b></p></div>
+      </div>
 
     </div>
 
@@ -88,18 +168,47 @@
         <h1>We are StudyLab, an online Learning Center</h1>
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+        <div class="watch-video">
+         <div class="video">
+          <img src="https://wwwcdn.moovly.com/wp-content/uploads/2021/05/Tabsedugraphic.png" height="200px">
+         </div>
+
+          <div>
+            <h3>Learn anything from StudyLab, Watch video</h3>
+          </div>
+        </div>
       </div>
+
+
       <div class="main-box2">
         <div>
 
-          <div></div>
-          <div></div>
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9fPQB7zWoSH2PErFTX_G_MXRWX179ChkH9A&usqp=CAU" height="70px" width="70px">
+            <h3>Top Quality Content</h3>
+            <p class="content">A small river named Duden flows by their place and supplies</p>
+          </div>
+          <div>
+            <img src="https://www.iconbunny.com/icons/media/catalog/product/1/2/120.9-teacher-i-icon-iconbunny.jpg" height="70px" width="70px">
+            <h3>Highly Skilled Instructor</h3>
+            <p class="content">A small river named Duden flows by their place and supplies</p>
+          </div>
 
         </div>
         
         <div>
-          <div></div>
-          <div></div>
+          <div>
+            <img src="https://www.clipartmax.com/png/middle/214-2148131_quiz-icon-png-download-circle.png" height="70px" width="70px">
+            <h3>World Class & Quiz
+            </h3>
+            <p class="content">A small river named Duden flows by their place and supplies</p>
+          </div>
+          <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/014/179/558/original/certificate-icons-design-in-blue-circle-png.png" height="70px" width="70px">
+            <h3>Get Certified</h3>
+            <p class="content">A small river named Duden flows by their place and supplies</p>
+          </div>
         </div>
 
       </div>
